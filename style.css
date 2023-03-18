@@ -1,0 +1,62 @@
+:root{
+    --error-color: red;
+    --success-color: green;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container{
+    width:fit-content;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.form-control.error input{
+    border-color: var(--error-color);
+}
+
+.form-control.error select{
+    border-color: var(--error-color);
+}
+
+.form-control small{
+    color: var(--error-color);
+    display: inline;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control.success img{
+   visibility: visible;
+}
+
+.form-control.success input{
+    border-color: var(--success-color);
+}
+
+.form-control.success small{
+   visibility: hidden;
+}
+
+form button{
+    cursor: pointer;
+}
+
+img{
+    width: 30px;
+    padding: 10px;
+    visibility: hidden;
+}
+

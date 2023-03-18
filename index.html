@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <fieldset class="container">
+      <form id="form" action="/">
+        <div>
+          <div class="form-control">
+            <label for="name"><b>Username:</b></label>
+            <input id="name" name="name" type="text" />
+            <img id = "img" src="check-mark.jpeg" alt="Valid Entry">
+            <small></small>
+          </div>
+          <br />
+          <div class="form-control">
+            <label for="email"><b>E-mail:</b></label>
+            <input id="email" name="email" />
+            <img id = "img" src="check-mark.jpeg" alt="Valid Entry">
+            <small></small>
+          </div>
+          <br />
+          <div class="form-control">
+            <label for="position" id="position"><b>Position:</b> </label>
+            <select name="select" id="select">
+              <option>Not selected</option>
+              <option>Software Developer</option>
+              <option >Data Scientist</option>
+              <option>Web Developer</option>
+            </select>
+            <img id = "img" src="check-mark.jpeg" alt="Valid Entry">
+            <small></small>
+          </div>
+          <br />
+          <div class="form-control" id="type">
+            <label for="type" name="type"><b>Type:</b></label>
+            <input
+              type="radio"
+              name="range"
+              id="ft"
+              class="radio"
+              uchecked="uchecked"
+            />
+            <label>Full-time</label><br />
+
+            <input
+              type="radio"
+              name="range"
+              id="pt"
+              class="radio"
+              uchecked="uchecked"
+            /><label>Part-time</label>
+            <img id = "img" src="check-mark.jpeg" alt="Valid Entry">
+            <small>You must select a type</small>
+          </div>
+
+          <br />
+          <div><button type="submit" id="validate">Submit</button></div>
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>
